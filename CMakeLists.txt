@@ -45,3 +45,4 @@ add_executable(TEST_ADDITION TP1-files/test/test_adduint16.c TP1-files/src/lib.h
 add_executable(TEST_MAJUSCULE TP1-files/test/test_majuscule.c TP1-files/src/majusculeLib.h)
 add_test(NAME test_scalar_sse COMMAND TEST_SCALAIRE)
 add_test(NAME test_addition_sse COMMAND TEST_ADDITION)
+add_test(NAME test_majuscule COMMAND TEST_MAJUSCULE)
