@@ -2,10 +2,12 @@
 
 
 #include <malloc.h>
+#include <time.h>
 #include "../src/majusculeLib.h"
 
 int main(void){
-    int size = 8;
+    srand(time(NULL));
+    int size = 16;
     char* str = malloc(size * sizeof(char));
     init_str(str, size);
 
@@ -17,5 +19,6 @@ int main(void){
             return 1;
         }
     }
+    printf("%s / %s", res, ressse);
     return 0;
 }
