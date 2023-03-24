@@ -11,6 +11,7 @@ add_executable(MATMUL_SCALAIRE_SSE src/matmul_scalaire_sse.h src/matmul_scalaire
 add_executable(MATMUL_SCALAIRE_SSE_8 src/matmul_scalaire_sse.h src/matmul_scalaire_sse_8.c)
 add_executable(MATMUL_SCALAIRE_SSE_16 src/matmul_scalaire_sse.h src/matmul_scalaire_sse_16.c)
 add_executable(MATMUL_BLOC src/matmul_bloc.h src/matmul_bloc.c)
+add_executable(MATMUL_BLOC_SSE src/matmul_bloc_sse.h src/matmul_bloc_sse.c)
 
 enable_testing()
 add_executable(MATMUL_TEST tests/matmul_test.c src/matmul.h)
@@ -23,3 +24,5 @@ add_executable(MATMUL_SCALAIRE_SSE_TEST_16 tests/matmul_scalaire_sse_test_16.c s
 add_test(NAME matmul_scalaire_sse_test_16 COMMAND MATMUL_SCALAIRE_SSE_TEST_16)
 add_executable(MATMUL_BLOC_TEST tests/matmul_bloc_test.c src/matmul_bloc.h src/matmul.h)
 add_test(NAME matmul_bloc_test COMMAND MATMUL_BLOC_TEST)
+add_executable(MATMUL_BLOC_SSE_TEST tests/matmul_bloc_sse_test.c src/matmul_bloc_sse.h src/matmul.h)
+add_test(NAME matmul_bloc_sse_test COMMAND MATMUL_BLOC_SSE_TEST)
