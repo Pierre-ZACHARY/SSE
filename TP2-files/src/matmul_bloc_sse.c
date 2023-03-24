@@ -5,7 +5,7 @@
 #include "matmul_bloc_sse.h"
 
 
-int main(void){
+int main(void){ //real    0m8,604s
     size_t dim = 2048;
 
     float *A = malloc(dim * dim * sizeof(float));

@@ -2,8 +2,8 @@
 #include "matmul.h"
 
 
-int main() {
-  size_t dim = 2048;
+int main() {//real    0m58,738s
+    size_t dim = 2048;
 
   float *A = malloc(dim * dim * sizeof(float));
   float *B = malloc(dim * dim * sizeof(float));

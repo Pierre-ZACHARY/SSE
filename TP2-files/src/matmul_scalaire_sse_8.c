@@ -2,8 +2,9 @@
 #include "matmul_scalaire_sse.h"
 
 
-int main() {
-  size_t dim = 2048;
+int main() { //real    0m11,752s
+
+    size_t dim = 2048;
 
   float *A = _mm_malloc(dim * dim * sizeof(float),16);
   float *B = _mm_malloc(dim * dim * sizeof(float),16);
