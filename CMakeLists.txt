@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.16)
 project(SSE_TP1 C)
 
-add_compile_options(-Wall -msse4.1 -O2)
+add_compile_options(-Wall -msse4.2 -O2)
 set(CMAKE_C_STANDARD 11)
 
 enable_testing()
